@@ -52,11 +52,12 @@ sudo sysctl -p /usr/lib/sysctl.d/10-apparmor.conf
 ## 步骤
 ```bash
 source build/envsetup.sh
-export TARGET_RELEASE=trunk_staging
+export TARGET_RELEASE=ap2a
 ap2a
 bp1a（or trunk_staging）
 build_build_var_cache
-lunch
+lunch aosp_oriole-ap2a-userdebug
+m -j 4
 ```
 ## 增加交换内存
 ```bash
