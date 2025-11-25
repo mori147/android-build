@@ -1,9 +1,21 @@
 
-# 最最最重要的：一定一定要确保先把 bootloader 分区的两个 slot 都刷到最新的 bootloader，
-且一样的。这里重启到 bootloader 下，
+# adb 常用命令
+adb devices
+adb -s 1234567890ABCDEF shell
+adb  reboot bootloader
+adb kill-server
+fastboot devices
+fastboot boot
+fastboot getvar all
+fastboot flashall -w
+
+
+# 最最最重要的：一定一定要确保先把 bootloader 分区的两个 slot 都刷到最新的 bootloader
+且一样的。
+## 这里重启到 bootloader 下，
 执行这条命令 
-```base
-fastboot --slot all flash bootloader bootloader-oriole-slider-16.2-13291547.img
+```bash
+fastboot --slot all flash bootloader bootloader-oriole-slider-14.5-12088207.img
 ```
 
 # 降级
