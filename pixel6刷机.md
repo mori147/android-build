@@ -26,7 +26,8 @@ require version-baseband=g5123b-130914-240205-B-11405587
 
 require version-bootloader=slider-1.x-xxxxxxxx
 
-
+# 自定义rom
+set ANDROID_PRODUCT_OUT=%cd%
 
 
 

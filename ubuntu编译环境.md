@@ -10,11 +10,11 @@ LANG=en_US xdg-user-dirs-gtk-update
 
 # 代理
 ```bash
-export http_proxy="http://192.168.0.100:7890"
-export https_proxy="http://192.168.0.100:7890"
+export http_proxy="http://192.168.2.100:7890"
+export https_proxy="http://192.168.2.100:7890"
 
-git config --global http.proxy http://192.168.0.100:7890
-git config --global https.proxy http://192.168.0.100:7890
+git config --global http.proxy http://192.168.2.100:7890
+git config --global https.proxy http://192.168.2.100:7890
 ```
 
 # repo 下载
@@ -40,13 +40,18 @@ repo sync -c -d -j8 --no-clone-bundle --force-sync
 AP2A.240905.003.F1
 
 # 二进制驱动
+## pixle
 https://source.android.com/docs/setup/reference/build-numbers?hl=zh-cn#build-ids-defined
 https://developers.google.com/android/drivers?hl=zh-cn
+
+## oneplus6 -- enchilada
+https://lineage-archive.timschumi.net/
 
 # 安装依赖库
 ```bash
 sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev-i386 libncurses5 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
 ```
+
 ## chatgpt补充
 ```bash
 sudo dpkg --add-architecture i386
