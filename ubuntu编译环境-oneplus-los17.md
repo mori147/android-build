@@ -45,24 +45,24 @@ sudo apt install git-core lib32z1-dev libncurses6 libncurses-dev lib32ncurses-de
 sudo apt install g++-multilib gcc-multilib build-essential
 ```
 # 编译启动
-1. source
+## 1. source
 ```bash
 source build/envsetup.sh
 ```
-2. croot
+## 2. croot
 ```bash
 croot
 ```
-3. 驱动镜像
+## 3. 驱动镜像
 ```bash
 breakfast enchilada
 ```
 **第一次肯定会报错，解决办法在下面**
-4. brunch
+## 4. brunch
 ```bash
 brunch enchilada
 ```
-5. installer
+## 5. installer
 There you’ll find all the files that were created. The two files of more interest are:
 
 boot.img, which is the LineageOS recovery image.
